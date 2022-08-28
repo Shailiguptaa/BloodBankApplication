@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDA00C0C"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".donorRegistrationActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/bblogo" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Donor Registration!"
+                android:textColor="#EDA00C0C"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bbprofile"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextAppearance="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registrationFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter full name"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/black"
+                        android:drawableStart="@drawable/person"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registrationIdNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter ID Number"
+                        android:inputType="number"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/black"
+                        android:drawableStart="@drawable/number"/>
+
+                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registrationPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Contact Number"
+                    android:inputType="number"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/phone"/>
+
+                <Spinner
+                    android:id="@+id/bloodGroupSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:entries="@array/bloodgroups">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registrationEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/email"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registrationPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/lock"/>
+                <Button
+                    android:id="@+id/registerButton"
+                    android:text="sign up"
+                    android:background="@drawable/buttons_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/backButton"
+                    android:text="Already a member? Sign In!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

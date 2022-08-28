@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "104860171216",
+    "project_id": "blooddonateapplication-8c467",
+    "storage_bucket": "blooddonateapplication-8c467.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104860171216:android:5f966820b884c0e58b57d5",
+        "android_client_info": {
+          "package_name": "com.example.bloodbankapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104860171216-01tsuv8v1lo4um1eg545i6pf9bfdcni5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1jSKJwVDq3JNdco0j7i_Fd8M4ZFuByso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104860171216-01tsuv8v1lo4um1eg545i6pf9bfdcni5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
